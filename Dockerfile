@@ -3,6 +3,8 @@ FROM node:carbon-slim
 RUN apt-get update && \
     apt-get install -y git
 
+RUN yarn global add typescript
+
 USER node
 
 ENV HOME=/home/node

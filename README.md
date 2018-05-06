@@ -34,12 +34,17 @@ output/
 $ docker run --rm -v $(pwd):/home/node/app meteor-builder meteor npm install
 ```
 
-2. Run `npm test`.
+2. Run `tsc` (if TypeScript project).
+```
+$ docker run --rm -v $(pwd):/home/node/app meteor-builder tsc
+```
+
+3. Run `npm test`.
 ```
 $ docker run --rm -v $(pwd):/home/node/app meteor-builder meteor npm test
 ```
 
-3. Run `meteor build`.
+4. Run `meteor build`.
 ```
 $ docker run --rm -v $(pwd):/home/node/app meteor-builder meteor build --directory output
 ```
