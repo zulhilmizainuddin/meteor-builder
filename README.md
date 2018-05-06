@@ -2,6 +2,15 @@
 
 Meteor Docker image for building Meteor projects
 
+## Docker Hub image
+
+Docker image available at https://hub.docker.com/r/zulhilmizainuddin/meteor-builder/
+
+Docker pull command
+```
+docker pull zulhilmizainuddin/meteor-builder
+```
+
 ## Prerequisite
 
 Make sure the Meteor project to be built includes a `.meteorignore` and `.dockerignore` file with the following contents.
