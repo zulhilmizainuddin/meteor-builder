@@ -36,7 +36,7 @@ $ docker run --rm -v $(pwd):/home/node/app meteor-builder meteor npm install
 
 2. Run `tsc` (if TypeScript project).
 ```
-$ docker run --rm -v $(pwd):/home/node/app meteor-builder tsc
+$ docker run --rm -v $(pwd):/home/node/app meteor-builder tsc --skipLibCheck
 ```
 
 3. Run `npm test`.
