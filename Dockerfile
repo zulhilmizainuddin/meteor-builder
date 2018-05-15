@@ -15,5 +15,7 @@ RUN cd $HOME && \
 
 ENV PATH=$HOME/.meteor:$PATH
 
-RUN mkdir $APP_HOME
+RUN mkdir $APP_HOME && \
+    chown node:node $APP_HOME
+    
 WORKDIR $APP_HOME
